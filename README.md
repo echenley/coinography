@@ -12,7 +12,7 @@ Demo React Native app built with [Expo](https://expo.io/), [Victory Native](http
 - Jest
 - Enzyme
 - Prettier
-- Eslint
+- ESLint
 
 ## Running Locally
 
