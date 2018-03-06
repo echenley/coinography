@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react'
+import moment from 'moment'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import {
   VictoryAxis,
@@ -139,19 +140,12 @@ class Chart extends React.Component<Props, State> {
               // ticks are >= 24 hours apart
               if (Math.abs(dates[adjacentIndex] - date) > 1000 * 60 * 60 * 24) {
                 const year = date.getFullYear()
-                return date.toLocaleString('en-US', {
-                  month: 'short',
-                  day: 'numeric',
-                  year: year !== currentYear ? 'numeric' : undefined,
-                })
+                const format = year !== currentYear ? 'l' : 'MMM D'
+                return moment(date).format(format)
               }
 
               const showMinutes = date.getMinutes() !== 0
-              return date.toLocaleString('en-US', {
-                hour: 'numeric',
-                minute: showMinutes ? 'numeric' : undefined,
-                hour12: true,
-              })
+              return moment(date).format(showMinutes ? 'LT' : 'h A')
             }}
           />
           <VictoryAxis
