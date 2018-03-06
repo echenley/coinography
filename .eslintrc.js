@@ -3,7 +3,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jest/recommended',
-    "plugin:flowtype/recommended",
+    'plugin:flowtype/recommended',
   ],
   env: {
     node: true,
