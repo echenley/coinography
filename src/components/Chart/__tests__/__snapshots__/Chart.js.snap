@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chart /> renders a candle chart correctly 1`] = `
+<View>
+  <VictoryChart
+    domainPadding={
+      Object {
+        "x": 5,
+        "y": 25,
+      }
+    }
+    padding={
+      Object {
+        "bottom": 40,
+        "left": 65,
+        "right": 10,
+        "top": 0,
+      }
+    }
+    scale={
+      Object {
+        "x": "time",
+      }
+    }
+    theme="VictoryTheme.material"
+    width={720}
+  >
+    <VictoryAxis
+      fixLabelOverlap={true}
+      tickFormat={[Function]}
+    />
+    <VictoryAxis
+      dependentAxis={true}
+      tickFormat={[Function]}
+    />
+    <VictoryCandlestick
+      candleColors={
+        Object {
+          "negative": "red",
+          "positive": "green",
+        }
+      }
+      data={
+        Array [
+          Object {
+            "close": 11309.64,
+            "high": 11315.01,
+            "low": 11301.04,
+            "open": 11307,
+            "x": "2018-03-03T22:05:00.000Z",
+          },
+          Object {
+            "close": 11307,
+            "high": 11307,
+            "low": 11290.05,
+            "open": 11298.98,
+            "x": "2018-03-03T22:00:00.000Z",
+          },
+          Object {
+            "close": 11298.98,
+            "high": 11298.98,
+            "low": 11270,
+            "open": 11290.25,
+            "x": "2018-03-03T21:55:00.000Z",
+          },
+          Object {
+            "close": 11290.24,
+            "high": 11291.05,
+            "low": 11280,
+            "open": 11284.35,
+            "x": "2018-03-03T21:50:00.000Z",
+          },
+          Object {
+            "close": 11284.35,
+            "high": 11293.5,
+            "low": 11280.54,
+            "open": 11293.5,
+            "x": "2018-03-03T21:45:00.000Z",
+          },
+        ]
+      }
+    />
+  </VictoryChart>
+</View>
+`;
+
+exports[`<Chart /> renders a line chart correctly 1`] = `
+<View>
+  <VictoryChart
+    domainPadding={
+      Object {
+        "x": 5,
+        "y": 25,
+      }
+    }
+    padding={
+      Object {
+        "bottom": 40,
+        "left": 65,
+        "right": 10,
+        "top": 0,
+      }
+    }
+    scale={
+      Object {
+        "x": "time",
+      }
+    }
+    theme="VictoryTheme.material"
+    width={720}
+  >
+    <VictoryAxis
+      fixLabelOverlap={true}
+      tickFormat={[Function]}
+    />
+    <VictoryAxis
+      dependentAxis={true}
+      tickFormat={[Function]}
+    />
+    <VictoryCandlestick
+      candleColors={
+        Object {
+          "negative": "red",
+          "positive": "green",
+        }
+      }
+      data={
+        Array [
+          Object {
+            "x": "2018-03-03T22:05:00.000Z",
+            "y": 11309.64,
+          },
+          Object {
+            "x": "2018-03-03T22:00:00.000Z",
+            "y": 11307,
+          },
+          Object {
+            "x": "2018-03-03T21:55:00.000Z",
+            "y": 11298.98,
+          },
+          Object {
+            "x": "2018-03-03T21:50:00.000Z",
+            "y": 11290.24,
+          },
+          Object {
+            "x": "2018-03-03T21:45:00.000Z",
+            "y": 11284.35,
+          },
+        ]
+      }
+    />
+  </VictoryChart>
+</View>
+`;
+
+exports[`<Chart /> renders correctly in failure state 1`] = `
+<View
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.2)",
+        "display": "flex",
+        "height": "100%",
+        "justifyContent": "center",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+        }
+      }
+    >
+      <Styled(Icon)
+        color="white"
+        name="warning"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 80,
+          }
+        }
+        virtual={undefined}
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Failed to fetch data
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Chart /> renders correctly while loading 1`] = `
+<View
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.2)",
+        "display": "flex",
+        "height": "100%",
+        "justifyContent": "center",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <Styled(Spinner)
+      color="white"
+      virtual={undefined}
+    />
+  </View>
+</View>
+`;
+
+exports[`<Chart /> renders correctly while loading with stale data 1`] = `
+<View>
+  <VictoryChart
+    domainPadding={
+      Object {
+        "x": 5,
+        "y": 25,
+      }
+    }
+    padding={
+      Object {
+        "bottom": 40,
+        "left": 65,
+        "right": 10,
+        "top": 0,
+      }
+    }
+    scale={
+      Object {
+        "x": "time",
+      }
+    }
+    theme="VictoryTheme.material"
+    width={720}
+  >
+    <VictoryAxis
+      fixLabelOverlap={true}
+      tickFormat={[Function]}
+    />
+    <VictoryAxis
+      dependentAxis={true}
+      tickFormat={[Function]}
+    />
+    <VictoryCandlestick
+      candleColors={
+        Object {
+          "negative": "red",
+          "positive": "green",
+        }
+      }
+      data={
+        Array [
+          Object {
+            "close": 11309.64,
+            "high": 11315.01,
+            "low": 11301.04,
+            "open": 11307,
+            "x": "2018-03-03T22:05:00.000Z",
+          },
+          Object {
+            "close": 11307,
+            "high": 11307,
+            "low": 11290.05,
+            "open": 11298.98,
+            "x": "2018-03-03T22:00:00.000Z",
+          },
+          Object {
+            "close": 11298.98,
+            "high": 11298.98,
+            "low": 11270,
+            "open": 11290.25,
+            "x": "2018-03-03T21:55:00.000Z",
+          },
+          Object {
+            "close": 11290.24,
+            "high": 11291.05,
+            "low": 11280,
+            "open": 11284.35,
+            "x": "2018-03-03T21:50:00.000Z",
+          },
+          Object {
+            "close": 11284.35,
+            "high": 11293.5,
+            "low": 11280.54,
+            "open": 11293.5,
+            "x": "2018-03-03T21:45:00.000Z",
+          },
+        ]
+      }
+    />
+  </VictoryChart>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.2)",
+        "display": "flex",
+        "height": "100%",
+        "justifyContent": "center",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <Styled(Spinner)
+      color="white"
+      virtual={undefined}
+    />
+  </View>
+</View>
+`;

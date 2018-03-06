@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeScreen /> has correct navigation options: headerRight 1`] = `
+<Styled(Right)
+  virtual={undefined}
+>
+  <Styled(Button)
+    onPress={[Function]}
+    transparent={true}
+    virtual={undefined}
+  >
+    <Styled(Text)
+      virtual={undefined}
+    >
+      About
+    </Styled(Text)>
+  </Styled(Button)>
+</Styled(Right)>
+`;
+
+exports[`<HomeScreen /> renders correctly 1`] = `
+<Styled(Container)
+  virtual={undefined}
+>
+  <Styled(Content)
+    padder={true}
+    virtual={undefined}
+  >
+    <Styled(Card)
+      virtual={undefined}
+    >
+      <Connect(Controls) />
+      <Connect(Chart) />
+    </Styled(Card)>
+  </Styled(Content)>
+</Styled(Container)>
+`;

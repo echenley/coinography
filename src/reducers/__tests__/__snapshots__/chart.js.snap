@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chart reducer FETCH_HISTORIC_DATA_FAILURE updates loadingState if requestId matches 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": null,
+  "granularity": 300,
+  "loadingState": "failure",
+  "requestId": 2,
+  "type": "candle",
+}
+`;
+
+exports[`chart reducer FETCH_HISTORIC_DATA_SUCCESS updates data and loadingState if requestId matches 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": Array [
+    Array [
+      1520110800,
+      11259.7,
+      11293.58,
+      11273.18,
+      11260.79,
+      20.929171180000008,
+    ],
+    Array [
+      1520110500,
+      11248.99,
+      11300.43,
+      11248.99,
+      11273.18,
+      29.644797649999997,
+    ],
+    Array [
+      1520110200,
+      11233.58,
+      11251,
+      11237.93,
+      11248.99,
+      23.785362620000004,
+    ],
+    Array [
+      1520109900,
+      11218.71,
+      11299.31,
+      11299.3,
+      11237.99,
+      43.71891207999998,
+    ],
+    Array [
+      1520109600,
+      11271.28,
+      11315,
+      11290,
+      11299.3,
+      26.03891608000001,
+    ],
+  ],
+  "granularity": 300,
+  "loadingState": "success",
+  "requestId": 2,
+  "type": "candle",
+}
+`;
+
+exports[`chart reducer returns correct initialState 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": null,
+  "granularity": 300,
+  "loadingState": "loading",
+  "requestId": null,
+  "type": "candle",
+}
+`;
+
+exports[`chart reducer updates chart type on UPDATE_CHART_TYPE 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": null,
+  "granularity": 300,
+  "loadingState": "loading",
+  "requestId": null,
+  "type": "line",
+}
+`;
+
+exports[`chart reducer updates currency on UPDATE_CURRENCY 1`] = `
+Object {
+  "currency": "ETH-USD",
+  "data": null,
+  "granularity": 300,
+  "loadingState": "loading",
+  "requestId": null,
+  "type": "candle",
+}
+`;
+
+exports[`chart reducer updates granularity on UPDATE_GRANULARITY 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": null,
+  "granularity": 3600,
+  "loadingState": "loading",
+  "requestId": null,
+  "type": "candle",
+}
+`;
+
+exports[`chart reducer updates loadingState and requestId on FETCH_HISTORIC_DATA_LOADING 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "data": null,
+  "granularity": 300,
+  "loadingState": "loading",
+  "requestId": 1,
+  "type": "candle",
+}
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions exports correct actions 1`] = `
+Object {
+  "fetchChartData": [Function],
+  "updateChartType": [Function],
+  "updateCurrency": [Function],
+  "updateGranularity": [Function],
+}
+`;

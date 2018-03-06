@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors exports correct selectors 1`] = `
+Object {
+  "getCandleChartData": [Function],
+  "getChartDataLoadingState": [Function],
+  "getChartType": [Function],
+  "getCurrency": [Function],
+  "getGranularity": [Function],
+  "getLineChartData": [Function],
+  "getRawChartData": [Function],
+}
+`;

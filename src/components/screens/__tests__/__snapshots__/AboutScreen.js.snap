@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutScreen /> renders correctly 1`] = `
+<Styled(Container)
+  virtual={undefined}
+>
+  <Styled(Content)
+    padder={true}
+    virtual={undefined}
+  >
+    <Styled(Card)
+      virtual={undefined}
+    >
+      <Styled(CardItem)
+        bordered={true}
+        virtual={undefined}
+      >
+        <Styled(Left)
+          virtual={undefined}
+        >
+          <Styled(Thumbnail)
+            small={true}
+            source={
+              Object {
+                "testUri": "../../../src/images/Me.jpeg",
+              }
+            }
+            virtual={undefined}
+          />
+          <Styled(Body)
+            virtual={undefined}
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+              virtual={undefined}
+            >
+              Evan Henley
+            </Styled(Text)>
+          </Styled(Body)>
+        </Styled(Left)>
+      </Styled(CardItem)>
+      <Styled(CardItem)
+        bordered={true}
+        virtual={undefined}
+      >
+        <Styled(Body)
+          virtual={undefined}
+        >
+          <Styled(Text)
+            virtual={undefined}
+          >
+            Classical musician turned software engineer. Particularly interested in ambitious React projects, forward-thinking companies building state of the art web apps, and participation in the open source JavaScript community. When I’m not impetuously coding, I’m reading nonfiction, playing convoluted board games, or building glorious fires in the backyard.
+          </Styled(Text)>
+        </Styled(Body)>
+      </Styled(CardItem)>
+      <Styled(CardItem)
+        footer={true}
+        virtual={undefined}
+      >
+        <Styled(Button)
+          iconLeft={true}
+          onPress={[Function]}
+          small={true}
+          transparent={true}
+          virtual={undefined}
+        >
+          <Styled(Icon)
+            name="logo-github"
+            style={
+              Object {
+                "fontSize": 18,
+              }
+            }
+            virtual={undefined}
+          />
+          <Styled(Text)
+            virtual={undefined}
+          >
+            GitHub
+          </Styled(Text)>
+        </Styled(Button)>
+        <Styled(Button)
+          iconLeft={true}
+          onPress={[Function]}
+          small={true}
+          transparent={true}
+          virtual={undefined}
+        >
+          <Styled(Icon)
+            name="logo-twitter"
+            style={
+              Object {
+                "fontSize": 18,
+              }
+            }
+            virtual={undefined}
+          />
+          <Styled(Text)
+            virtual={undefined}
+          >
+            Twtter
+          </Styled(Text)>
+        </Styled(Button)>
+        <Styled(Button)
+          iconLeft={true}
+          onPress={[Function]}
+          small={true}
+          transparent={true}
+          virtual={undefined}
+        >
+          <Styled(Icon)
+            name="link"
+            style={
+              Object {
+                "fontSize": 18,
+              }
+            }
+            virtual={undefined}
+          />
+          <Styled(Text)
+            virtual={undefined}
+          >
+            Blog
+          </Styled(Text)>
+        </Styled(Button)>
+      </Styled(CardItem)>
+    </Styled(Card)>
+  </Styled(Content)>
+</Styled(Container)>
+`;

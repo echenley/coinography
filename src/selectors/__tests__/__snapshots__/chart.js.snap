@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCandleChartData returns candle chart data 1`] = `
+Array [
+  Object {
+    "close": 11451.85,
+    "high": 11469,
+    "low": 11407.15,
+    "open": 11407.16,
+    "x": 2018-03-03T23:25:00.000Z,
+  },
+  Object {
+    "close": 11423.99,
+    "high": 11472.99,
+    "low": 11417,
+    "open": 11472.99,
+    "x": 2018-03-03T23:30:00.000Z,
+  },
+  Object {
+    "close": 11432,
+    "high": 11437,
+    "low": 11423.98,
+    "open": 11423.99,
+    "x": 2018-03-03T23:35:00.000Z,
+  },
+  Object {
+    "close": 11418.99,
+    "high": 11432.5,
+    "low": 11402.09,
+    "open": 11431.99,
+    "x": 2018-03-03T23:40:00.000Z,
+  },
+  Object {
+    "close": 11433,
+    "high": 11433,
+    "low": 11408.47,
+    "open": 11419,
+    "x": 2018-03-03T23:45:00.000Z,
+  },
+]
+`;
+
+exports[`getLineChartData returns line chart data 1`] = `
+Array [
+  Object {
+    "x": 2018-03-03T23:25:00.000Z,
+    "y": 11451.85,
+  },
+  Object {
+    "x": 2018-03-03T23:30:00.000Z,
+    "y": 11423.99,
+  },
+  Object {
+    "x": 2018-03-03T23:35:00.000Z,
+    "y": 11432,
+  },
+  Object {
+    "x": 2018-03-03T23:40:00.000Z,
+    "y": 11418.99,
+  },
+  Object {
+    "x": 2018-03-03T23:45:00.000Z,
+    "y": 11433,
+  },
+]
+`;

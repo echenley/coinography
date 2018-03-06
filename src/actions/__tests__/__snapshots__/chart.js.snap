@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chart actions fetchChartData dispatches correct actions on successful fetch: calls correct api endpoint 1`] = `"https://api.gdax.com/products/BTC-USD/candles?granularity=300"`;
+
+exports[`chart actions updateChartType returns correct action object 1`] = `
+Object {
+  "chartType": "line",
+  "type": "UPDATE_CHART_TYPE",
+}
+`;
+
+exports[`chart actions updateCurrency returns correct action object 1`] = `
+Object {
+  "currency": "BTC-USD",
+  "type": "UPDATE_CURRENCY",
+}
+`;
+
+exports[`chart actions updateGranularity returns correct action object 1`] = `
+Object {
+  "granularity": 300,
+  "type": "UPDATE_GRANULARITY",
+}
+`;

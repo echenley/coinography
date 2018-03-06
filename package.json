@@ -1,0 +1,75 @@
+{
+  "name": "coinography",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest --coverage",
+    "test-watch": "jest --watch",
+    "flow": "flow",
+    "flow-typed": "flow-typed install --overwrite",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^6.3.1",
+    "axios": "^0.18.0",
+    "eslint-plugin-jest": "^21.12.3",
+    "expo": "^25.0.0",
+    "native-base": "^2.3.9",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-navigation": "^1.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "victory-native": "^0.15.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.1",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.66.0",
+    "flow-typed": "^2.3.0",
+    "husky": "^0.14.3",
+    "jest-expo": "25.0.0",
+    "lint-staged": "^7.0.0",
+    "react-dom": "^16.2.0",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0",
+    "remote-redux-devtools": "^0.5.12",
+    "remotedev-rn-debugger": "^0.8.3"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|victory-native|victory-core|victory-chart|victory-pie|native-base-shoutem-theme|native-base/node_modules/react-native-vector-icons|react-clone-referenced-element|expo(nent)?|@expo(nent)?/.*|react-navigation|sentry-expo))"
+    ],
+    "setupFiles": [
+      "./jest-setup.js"
+    ]
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "node_modules/.bin/prettier --write",
+        "git add"
+      ]
+    },
+    "subTaskConcurrency": 1
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
+  }
+}
