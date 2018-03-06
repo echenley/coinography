@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/echenley/coinography.svg?branch=master)](https://travis-ci.org/echenley/chai-equal-jsx)
+[![Build Status](https://travis-ci.org/echenley/coinography.svg?branch=master)](https://travis-ci.org/echenley/coinography)
 [![Build Status](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 
 # Coinography
