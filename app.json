@@ -1,5 +1,6 @@
 {
   "expo": {
+    "description": "Demo React Native app built with Redux, FlowType, Victory, and the GDAX API.",
     "githubUrl": "https://github.com/echenley/coinography",
     "icon": "./icon.png",
     "name": "Coinography",
