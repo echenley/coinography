@@ -5,13 +5,19 @@ import { View, StyleSheet } from 'react-native'
 import { Picker } from 'native-base'
 import type { ChartType, Currency, Granularity } from '../../types'
 
-export type Props = {
+import type {
+  UpdateChartType,
+  UpdateCurrency,
+  UpdateGranularity,
+} from '../../types/actions'
+
+type Props = {
   chartType: ChartType,
   currency: Currency,
   granularity: Granularity,
-  updateChartType: (chartType: ChartType) => mixed,
-  updateCurrency: (currency: Currency) => mixed,
-  updateGranularity: (granularity: Granularity) => mixed,
+  updateChartType: (chartType: ChartType) => UpdateChartType,
+  updateCurrency: (currency: Currency) => UpdateCurrency,
+  updateGranularity: (granularity: Granularity) => UpdateGranularity,
 }
 
 const currencies: Array<Currency> = ['BTC-USD', 'ETH-USD']

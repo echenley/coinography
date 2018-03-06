@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import moment from 'moment'
+import type { AxiosPromise } from 'axios'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import {
   VictoryAxis,
@@ -12,22 +13,24 @@ import {
 } from 'victory-native'
 import { Icon, Spinner } from 'native-base'
 import type {
+  CandleData,
   ChartType,
   Currency,
   Granularity,
   HistoricData,
+  LineData,
   LoadingState,
 } from '../../types'
 
 export type Props = {
-  chartData: ?HistoricData,
+  chartData: LineData | CandleData | null,
   chartType: ChartType,
   currency: Currency,
   fetchChartData: (
     currency: Currency,
     granularity: Granularity,
     silent?: boolean
-  ) => Promise<HistoricData>,
+  ) => AxiosPromise<HistoricData>,
   granularity: Granularity,
   loadingState: LoadingState,
 }

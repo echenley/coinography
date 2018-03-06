@@ -5,5 +5,8 @@ import type { State } from '../reducers'
 
 export type { Action, State }
 export type GetState = () => State
-export type ThunkAction = (dispatch: Dispatch, getState: GetState) => mixed
-export type Dispatch = (action: Action | ThunkAction) => mixed
+export type ThunkAction<R> = (dispatch: Dispatch, getState: GetState) => R
+export type Dispatch = {
+  <A: Action>(action: A): A,
+  <R>(thunk: ThunkAction<R>): R,
+}

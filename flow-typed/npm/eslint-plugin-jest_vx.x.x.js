@@ -1,4 +1,4 @@
-// flow-typed signature: 45fbf35cf06f94f1979b8273be965ca6
+// flow-typed signature: 0ab5e0588de2b482ed2d80f3d2b26482
 // flow-typed version: <<STUB>>/eslint-plugin-jest_v^21.12.3/flow_v0.66.0
 
 /**
@@ -51,6 +51,10 @@ declare module 'eslint-plugin-jest/rules/__tests__/no-hooks.test' {
 }
 
 declare module 'eslint-plugin-jest/rules/__tests__/no-identical-title.test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/__tests__/no-jest-import.test' {
   declare module.exports: any;
 }
 
@@ -111,6 +115,10 @@ declare module 'eslint-plugin-jest/rules/no-hooks' {
 }
 
 declare module 'eslint-plugin-jest/rules/no-identical-title' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/no-jest-import' {
   declare module.exports: any;
 }
 
@@ -185,6 +193,9 @@ declare module 'eslint-plugin-jest/rules/__tests__/no-hooks.test.js' {
 declare module 'eslint-plugin-jest/rules/__tests__/no-identical-title.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/no-identical-title.test'>;
 }
+declare module 'eslint-plugin-jest/rules/__tests__/no-jest-import.test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/no-jest-import.test'>;
+}
 declare module 'eslint-plugin-jest/rules/__tests__/no-large-snapshots.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/no-large-snapshots.test'>;
 }
@@ -229,6 +240,9 @@ declare module 'eslint-plugin-jest/rules/no-hooks.js' {
 }
 declare module 'eslint-plugin-jest/rules/no-identical-title.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/no-identical-title'>;
+}
+declare module 'eslint-plugin-jest/rules/no-jest-import.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/no-jest-import'>;
 }
 declare module 'eslint-plugin-jest/rules/no-large-snapshots.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/no-large-snapshots'>;
