@@ -16,7 +16,7 @@ env:
   # Separate runs for tests, linting, and flow
   matrix:
     - TEST_TYPE=lint
-    - TEST_TYPE=flow
+    - TEST_TYPE=flow-check
     - TEST_TYPE=test
 
 script:

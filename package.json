@@ -13,6 +13,7 @@
     "test": "jest --coverage",
     "test-watch": "jest --watch",
     "flow": "flow",
+    "flow-check": "flow check",
     "flow-typed": "flow-typed install --overwrite",
     "lint": "eslint src/"
   },
