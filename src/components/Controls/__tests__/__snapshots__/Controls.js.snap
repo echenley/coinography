@@ -6,10 +6,8 @@ exports[`<Controls /> renders correctly 1`] = `
     Object {
       "display": "flex",
       "flexDirection": "row",
-      "height": 36,
       "justifyContent": "center",
-      "marginBottom": 10,
-      "marginTop": 10,
+      "padding": 10,
     }
   }
 >

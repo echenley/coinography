@@ -13,10 +13,11 @@ cache:
   yarn: true
 
 env:
-  # Do two runs, one for testing and one for linting.
+  # Separate runs for tests, linting, and flow
   matrix:
-    - TEST_TYPE=test
     - TEST_TYPE=lint
+    - TEST_TYPE=flow
+    - TEST_TYPE=test
 
 script:
   # Run testing or linting depending on the environment.

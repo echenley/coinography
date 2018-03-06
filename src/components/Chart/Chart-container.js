@@ -1,6 +1,6 @@
 // @flow
 
-import { connect, type Connector } from 'react-redux'
+import { connect } from 'react-redux'
 import { fetchChartData } from '../../actions'
 import {
   getCandleChartData,
@@ -10,8 +10,8 @@ import {
   getGranularity,
   getLineChartData,
 } from '../../selectors'
-import Chart, { type Props } from './Chart'
-import type { State } from '../../types'
+import Chart from './Chart'
+import type { Currency, Granularity, Dispatch, State } from '../../types'
 
 function mapStateToProps(state: State) {
   const chartType = getChartType(state)
@@ -28,8 +28,14 @@ function mapStateToProps(state: State) {
   }
 }
 
-const connector: Connector<{}, Props> = connect(mapStateToProps, {
-  fetchChartData,
-})
+function mapDispatchToProps(dispatch: Dispatch) {
+  return {
+    fetchChartData: (
+      currency: Currency,
+      granularity: Granularity,
+      silent?: boolean
+    ) => dispatch(fetchChartData(currency, granularity, silent)),
+  }
+}
 
-export default connector(Chart)
+export default connect(mapStateToProps, mapDispatchToProps)(Chart)
