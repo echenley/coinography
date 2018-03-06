@@ -14,6 +14,10 @@ Demo React Native app built with [Expo](https://expo.io/), [Victory Native](http
 - Prettier
 - ESLint
 
+## Running in Expo
+
+https://expo.io/@echenley/coinography
+
 ## Running Locally
 
 ```
